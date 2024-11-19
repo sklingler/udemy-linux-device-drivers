@@ -19,7 +19,10 @@
 //  0070-0071 : rtc0                       -- rtc0 uses 70 here
 //  0080-008f : dma page reg
 
-#define MY_BASEPORT 0x0062
+// At work, this was free, but at home in was PNP0C09
+// sudo cat /proc/ioports
+//#define MY_BASEPORT 0x0062
+#define MY_BASEPORT 0x0068
 #define NUMBER_PORTS 2
 
 MODULE_LICENSE("GPL");
