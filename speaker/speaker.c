@@ -6,9 +6,8 @@
 
 MODULE_LICENSE("GPL");
 
-// Seems to be different on other installs
 // I was never able to get the static effect he got
-#define SPEAKER_PORT 0x62
+#define SPEAKER_PORT 0x61
 
 static int speaker_mod_init(void)
 {
