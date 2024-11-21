@@ -4,8 +4,12 @@
 
 // cat /proc/iomem shows this reguion is already reserved
 // 00000000-00000000 : Reserved
-#define MY_BASEADDRESS 0x00000000
+//#define MY_BASEADDRESS 0x00000000
 #define MY_BASEADDRESS 0xf8000000
+// seanklingler@pop-os:~/code/udemy-device/memmap/request-mem$ sudo cat /proc/iomem  | grep myp
+// f8000000-f800000e : myports
+// This assignment goes away on rmmmod
+
 #define LENGTH 0xf
 
 MODULE_LICENSE("GPL");
